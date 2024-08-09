@@ -36,17 +36,21 @@
     </div>
     <script>
         const apiKey = '06e16370c72b750ac7aee9ad14526d5e';
-        const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=westminster';
-        async function checkWeather() {
-            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+        const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial';
+        const searchBox = document.querySelector('.search input');
+        const searchBtn = document.querySelector('.search button');
+        async function checkWeather(city) {
+            const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
             let data = await response.json();
             console.log(data);
             document.querySelector('.city').innerHTML = data.name;
-            document.querySelector('.temp').innerHTML = math.round(data.main.temp) + '°c';
+            document.querySelector('.temp').innerHTML = math.round(data.main.temp) + '°f';
             document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
             document.querySelector('.wind').innerHTML = data.wind.speed + ' km/hr';
         }
-        checkWeather();
+        searchBtn.addEventListener('click', ()=> {
+            checkWeather(searchBox.value);
+        })
     </script>
 </body>
 </html>
