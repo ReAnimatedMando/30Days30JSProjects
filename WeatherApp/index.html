@@ -34,5 +34,15 @@
             </div>
         </div>
     </div>
+    <script>
+        const apiKey = '06e16370c72b750ac7aee9ad14526d5e';
+        const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=westminster';
+        async function checkWeather() {
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            let data = await response.json();
+            console.log(data);
+        }
+        checkWeather();
+    </script>
 </body>
 </html>
