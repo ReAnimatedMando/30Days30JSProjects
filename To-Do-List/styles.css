@@ -51,3 +51,14 @@ input {
     padding: 10px;
     font-weight: 14px;
 }
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
