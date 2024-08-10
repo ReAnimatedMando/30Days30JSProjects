@@ -14,7 +14,7 @@
         </div>
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">22°c</h1>
+            <h1 class="temp">67°f</h1>
             <h2 class="city">Denver</h2>
             <div class="details">
                 <div class="col">
@@ -36,17 +36,21 @@
     </div>
     <script>
         const apiKey = "06e16370c72b750ac7aee9ad14526d5e";
-        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=pittsburgh";
-        async function checkWeather() {
-            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial";
+        const searchBox = document.querySelector(".search input");
+        const searchBtn = document.querySelector(".search button");
+        async function checkWeather(city) {
+            const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
             var data = await response.json();
             console.log(data);
             document.querySelector(".city").innerHTML = data.name;
-            document.querySelector(".temp").innerHTML = data.main.temp + "°F";
+            document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°F";
             document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
             document.querySelector(".wind").innerHTML = data.wind.speed + " mph";
         }
-        checkWeather();
+        searchBtn.addEventListener("click", ()=>{
+            checkWeather(searchBox.value);
+        })
     </script>
 </body>
 </html>
