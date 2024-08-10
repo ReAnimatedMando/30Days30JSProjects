@@ -35,7 +35,13 @@
         </div>
     </div>
     <script>
-        
+        const apiKey = "06e16370c72b750ac7aee9ad14526d5e";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=newyork";
+        async function checkWeather() {
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            var data = await response.json();
+        }
+
     </script>
 </body>
 </html>
