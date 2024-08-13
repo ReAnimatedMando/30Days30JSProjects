@@ -89,3 +89,7 @@ ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
+
+ul li.checked::before {
+    background-image: url(Images/checked.png);
+}
