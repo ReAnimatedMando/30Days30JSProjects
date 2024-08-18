@@ -92,6 +92,15 @@ function selectAnswer(e){
     nextButton.style.display = "block";
 }
 
+function handleNextButton() {
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
+
 nextButton.addEventListener("click", ()=> {
     if(currentQuestionIndex < questions.length) {
         handleNextButton();
