@@ -28,3 +28,8 @@ body {
     padding: 26px 20px;
     border-radius: 5px;
 }
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
