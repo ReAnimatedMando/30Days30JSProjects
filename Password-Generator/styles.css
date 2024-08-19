@@ -45,3 +45,8 @@ body {
     cursor: pointer;
 }
 
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
