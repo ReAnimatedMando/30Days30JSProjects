@@ -39,3 +39,9 @@ body {
     border-bottom: 4px solid #019f55;
     padding-bottom: 7px;
 }
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
