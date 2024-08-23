@@ -56,3 +56,11 @@
     outline: none;
     border-radius: 5px;
 }
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
