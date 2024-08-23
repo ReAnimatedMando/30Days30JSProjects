@@ -14,3 +14,10 @@
     padding-left: 10%;
 }
 
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
