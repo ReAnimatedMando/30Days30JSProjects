@@ -12,9 +12,13 @@
             <h1>JavaScript<br> <span>Age Calculator</span></h1>
             <div class="input-box">
                 <input type="date" id="date">
-                <button>Calculator</button>
+                <button>Calculate</button>
             </div>
         </div>
     </div>
+    <script>
+        let userInput = document.getElementById("date");
+        userInput.max = new Date().toISOString().split("T")[0];
+    </script>
 </body>
 </html>
