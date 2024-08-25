@@ -88,3 +88,14 @@ body {
     margin: 5px;
     cursor: pointer;
 }
+
+.quote-box button i {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.quote-box button:nth-child(2) {
+    background: transparent;
+    color: #333;
+}
+
