@@ -12,19 +12,26 @@
         <blockquote id="quote">Loading...</blockquote>
         <span id="author">Loading...</span>
         <div>
-            <button>New Quote</button>
+            <button onclick="getQuote(api_url)">New Quote</button>
             <button><i class="fa-brands fa-twitter"></i>Tweet</button>
         </div>
     </div>
     <script>
+        const quote = document.getElementById("quote");
+        const author = document.getElementById("author");
         const api_url = "https://api.quotable.io/random";
 
         async function getQuote(url) {
             const response = await fetch(url);
             var data = await response.json();
-            console.log(data);
+            quote.innerHTML = data.content;
+            author.innerHTML = data.author;
         }
         getQuote(api_url);
+
+        function tweet() {
+            window.open("https://twitter.com/intent/tweet?text=Hello%2world");
+        }
     </script>
 </body>
 </html>
