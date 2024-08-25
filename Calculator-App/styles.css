@@ -13,3 +13,13 @@
     padding: 10px;
 }
 
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1 {
+    font-size: 60px;
+}
