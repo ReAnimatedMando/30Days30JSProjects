@@ -16,8 +16,13 @@
 
     </div>
     <script>
+        let toastBox = document.getElementById('toast-box')
+
         function showToast() {
-            
+            let toast = document.createElement('div');
+            toast.classList.add('toast');
+            toast.innerHTML = 'Success';
+            toastBox.appendChild(toast);
         }
     </script>
 </body>
