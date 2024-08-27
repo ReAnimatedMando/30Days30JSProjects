@@ -4,3 +4,22 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background: #f7edff;
+}
+.buttons {
+    margin: 50px;
+}
+
+.buttons button {
+    background: #333;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
