@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snack Bar</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/69a3e71191.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="buttons">
@@ -17,9 +18,9 @@
     </div>
     <script>
         let toastBox = document.getElementById('toast-box')
-        let succesMsg = 'Successfully submitted';
-        let errorMsg = 'Please fix the error!';
-        let invalidMsg = 'Invalid input, check again'
+        let succesMsg = '<i class="fa-solid fa-circle-check"></i> Successfully submitted';
+        let errorMsg = '<i class="fa-solid fa-circle-xmark"></i> Please fix the error!';
+        let invalidMsg = '<i class="fa-solid fa-circle-exclamation"></i> Invalid input, check again'
 
         function showToast(msg) {
             let toast = document.createElement('div');
