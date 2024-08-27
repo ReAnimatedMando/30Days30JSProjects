@@ -8,15 +8,18 @@
 </head>
 <body>
     <div class="buttons">
-        <button onclick="showToast()">Success</button>
-        <button onclick="showToast()">Error</button>
-        <button onclick="showToast()">Invalid</button>
+        <button onclick="showToast(succesMsg)">Success</button>
+        <button onclick="showToast(errorMsg)">Error</button>
+        <button onclick="showToast(invalidMsg)">Invalid</button>
     </div>
     <div id="toast-box">
 
     </div>
     <script>
         let toastBox = document.getElementById('toast-box')
+        let succesMsg = 'Successfully submitted';
+        let errorMsg = 'Please fix the error!';
+        let invalidMsg = 'Invalid input, check again'
 
         function showToast() {
             let toast = document.createElement('div');
