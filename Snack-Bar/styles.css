@@ -45,6 +45,13 @@ body{
     display: flex;
     align-items: center;
     position: relative;
+    transform: translateX(100%);
+    animation: moveLeft 0.5s linear forwards;
+}
+@keyframes moveLeft {
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .toast i {
@@ -75,4 +82,12 @@ body{
     100%{
         width: 0;
     }
+}
+
+.toast.error::after {
+    background: red;
+}
+
+.toast.invalid::after {
+    background: orange;
 }
