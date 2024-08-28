@@ -56,3 +56,23 @@ nav .circle {
     font-size: 14px;
     color: #fff;
 }
+
+#progress {
+    -webkit-appearance: none; 
+    width: 100%;
+    height: 6px;
+    background: #358af2;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(26, 0, 223, 0.22);
+}
