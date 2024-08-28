@@ -16,7 +16,7 @@
 }
 
 .music-player {
-    background: #bbd4ff;
+    background: #94c1f7;
     width: 400px;
     padding: 25px 35px;
     text-align: center;
@@ -34,15 +34,15 @@ nav .circle {
     height: 40px;
     line-height: 40px;
     background: #fff;
-    color: #f53192;
-    box-shadow: 0 5px 10px rgba(225, 26, 26, 0.22);
+    color: #358af2;
+    box-shadow: 0 5px 10px rgba(26, 0, 223, 0.22);
 }
 
 .song-img {
     width: 220px;
     border-radius: 50%;
     border: 8px solid #fff;
-    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+    box-shadow: 0 10px 60px rgba(26, 0, 223, 0.22);
 }
 
 .music-player h1 {
