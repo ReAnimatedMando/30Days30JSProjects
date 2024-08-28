@@ -96,3 +96,9 @@ nav .circle {
     box-shadow: 0 10px 20px rgba(26, 0, 223, 0.22);
     cursor: pointer;
 }
+
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: #358af2;
+    color: #fff;
+}
