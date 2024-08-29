@@ -10,9 +10,9 @@
     <div class="stopwatch">
         <h1 id="displayTime">00:00:00</h1>
         <div class="buttons">
-            <img src="Images/stop.png"/>
+            <img src="Images/stop.png" onclick="watchStop()">
             <img src="Images/start.png" onclick="watchStart()"/>
-            <img src="Images/reset.png"/>
+            <img src="Images/reset.png" onclick="watchReset()"/>
         </div>
     </div>
     <script>
@@ -40,6 +40,16 @@
                 clearInterval(timer);
             }
             timer = setInterval(stopwatch,1000);
+        }
+
+        function watchStop() {
+            clearInterval(timer);
+        }
+
+        function watchReset() {
+            clearInterval(timer);
+            [seconds, minutes, hours] = [0,0,0];
+            displayTime.innerHTML = "00:00:00";
         }
     </script>
 </body>
