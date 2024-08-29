@@ -25,3 +25,14 @@ body {
     font-weight: 300;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons img {
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
