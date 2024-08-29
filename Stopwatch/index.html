@@ -8,12 +8,16 @@
 </head>
 <body>
     <div class="stopwatch">
-        <h1>00:00:00</h1>
+        <h1 id="display-time">00:00:00</h1>
         <div class="buttons">
             <img src="Images/stop.png" alt="Stop button"/>
             <img src="Images/start.png" alt="Start button"/>
             <img src="Images/reset.png" alt="Reset button"/>
         </div>
     </div>
+    <script>
+        let [seconds, minutes, hours] = [0,0,0];
+        let displayTime = document.getElementById(display-time);
+    </script>
 </body>
 </html>
