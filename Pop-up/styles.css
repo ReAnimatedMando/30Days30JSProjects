@@ -37,3 +37,10 @@
     padding: 0 30px 30px;
     color: #333;
 }
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
