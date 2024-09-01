@@ -9,14 +9,18 @@
 <body>
     <div class="input-box">
         <input type="password" placeholder="password" id="password">
-        <img src="Images/eye-close.png" alt="Closed Eye Icon" id="eyeIcon"/>
+        <img src="Images/eye-close.png" id="eye-icon"/>
     </div>
     <script>
-        let eyeIcon = document.getElementById('eyeIcon');
+        let eyeIcon = document.getElementById('eye-icon');
         let password = document.getElementById('password');
 
         eyeIcon.onclick = function() {
-            
+            if(password.type == "password") {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
         }
     </script>
 </body>
