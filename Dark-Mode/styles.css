@@ -59,3 +59,13 @@ span {
     color: #606163;
     line-height: 22px;
 }
+
+.info a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
