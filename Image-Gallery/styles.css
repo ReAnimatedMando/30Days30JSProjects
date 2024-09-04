@@ -12,6 +12,7 @@ body {
 .gallery {
     width: 900px;
     display: flex;
+    overflow-x: scroll;
 }
 
 .gallery div {
@@ -20,6 +21,7 @@ body {
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     padding: 10px;
+    flex: none;
 }
 
 .gallery div img {
