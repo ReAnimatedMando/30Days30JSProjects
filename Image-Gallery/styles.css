@@ -5,3 +5,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #191919;
+}
+
+.gallery {
+    width: 900px;
+    display: flex;
+}
+
+.gallery div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.gallery div img {
+    width: 100%;
+}
