@@ -15,16 +15,22 @@
             <input type="email" name="Email" placeholder="Your Email" required />
             <button type="submit"><img src="Images/send-icon.png" width="30px"></button>
         </form>
-        <span>Thank You For Subscribing</span>
+        <span id="msg"></span>
     </div>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbw76jIGDIC61MAxPHDQeV_lRXsg7JgD0SHp1MvGA17g6Yiz0BV-BYhkK_DCyoutn70r/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+        const msg = document.getElementById('msg');
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                msg.innerHTML = "Thank You For Subscribing";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                }, 5000)
+                form.reset()
+            })
             .catch(error => console.error('Error!', error.message))
         })
       </script>
