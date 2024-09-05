@@ -14,3 +14,18 @@
     padding: 10px 10%;
     color: #fff;
 }
+
+.hero h3 {
+    margin-top: 15%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.hero h1 {
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 10px 0 50px;
+}
