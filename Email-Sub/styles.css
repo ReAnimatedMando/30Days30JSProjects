@@ -30,3 +30,26 @@
     margin: 10px 0 50px;
 }
 
+form {
+    background: #fff;
+    display: flex;
+    width: fit-content;
+}
+
+form input {
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    font-size: 16px;
+}
+
+form button {
+    background: #61b752;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 100px;
+    cursor: pointer;
+}
