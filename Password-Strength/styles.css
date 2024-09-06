@@ -38,6 +38,10 @@ button {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    trasnform: translate(-50%);
+    transform: translateY(-50%);
     right: 15px;
+}
+
+button img {
+    width: 35px;
 }
