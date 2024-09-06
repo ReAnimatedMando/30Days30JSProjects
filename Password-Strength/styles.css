@@ -30,3 +30,14 @@
     background: transparent;
 }
 
+button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    trasnform: translate(-50%);
+    right: 15px;
+}
