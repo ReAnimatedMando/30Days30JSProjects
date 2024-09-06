@@ -41,3 +41,8 @@ textarea {
     margin-bottom: 30px;
 }
 
+textarea::placeholder {
+    font-size: 16px;
+    color: #ddd;
+}
+
