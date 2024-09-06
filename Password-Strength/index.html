@@ -25,6 +25,15 @@
             } else {
                 msg.style.display = 'none';
             }
+            if(pass.value.length < 4) {
+                str.innerHTML = "weak";
+            }
+            else if(pass.value.length >= 4 && pass.value.length < 8) {
+                str.innerHTML = "medium";
+            }
+            else if(pass.value.length >= 8) {
+                str.innerHTML = "strong";
+            }
         })
     </script>
 </body>
