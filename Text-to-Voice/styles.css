@@ -15,3 +15,10 @@
     flex-direction: column;
 }
 
+.hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
