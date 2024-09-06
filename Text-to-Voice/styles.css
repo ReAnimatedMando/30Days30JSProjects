@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
 }
 
 .hero h1 {
@@ -20,5 +21,9 @@
     font-weight: 500;
     margin-top: -50px;
     margin-bottom: 50px;
+}
+
+.hero h1 span {
+    color: #ff2963;
 }
 
