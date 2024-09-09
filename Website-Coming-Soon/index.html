@@ -34,5 +34,12 @@
         </div>
         <img src="images/rocket.png" class="rocket"/>
     </div>
+    <script>
+        let countDownDate = new Date('Oct 16, 2021 00:00:00').getTime();
+        let x = setInterval(function(){
+            let now = new Date().getTime();
+            let distance = countDownDate - now;
+        },1000);
+    </script>
 </body>
 </html>
