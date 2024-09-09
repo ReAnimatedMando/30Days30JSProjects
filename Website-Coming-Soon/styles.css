@@ -33,3 +33,15 @@
     font-weight: 600;
 }
 
+.content h1 span {
+    color: #ff3753;
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+}
+
