@@ -43,5 +43,14 @@
     outline: none;
     padding: 12px 25px;
     color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img {
+    width: 15px;
+    margin-left: 10px;
 }
 
