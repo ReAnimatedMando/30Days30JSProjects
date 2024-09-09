@@ -12,6 +12,7 @@
     background-position: center;
     background-size: cover;
     padding: 0 8%;
+    position: relative;
 }
 
 .logo {
@@ -19,3 +20,16 @@
     padding: 20px 0;
     cursor: pointer;
 }
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
