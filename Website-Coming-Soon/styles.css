@@ -67,3 +67,9 @@
     margin-bottom: -14px;
 }
 
+.rocket {
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
