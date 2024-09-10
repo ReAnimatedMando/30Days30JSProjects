@@ -12,4 +12,12 @@
     background: #f3fbff;
 }
 
+.img-box {
+    width: 60%;
+    margin: auto;
+    line-height: 0;
+    background-image: url(Images/background.png);
+    overflow: hidden;
+}
+
 
