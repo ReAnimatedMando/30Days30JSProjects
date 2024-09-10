@@ -13,7 +13,7 @@
             <div class="img-wrap">
                 <img src="Images/original.jpg" id="originalImg">
             </div>
-            <span>
+            <span id="line">
                 <img src="Images/arrow.png" class="arrow"/>
             </span>
         </div>
@@ -22,6 +22,7 @@
         let imgBox = document.querySelector('.img-box');
         let imgWrap = document.querySelector('.img-wrap'); 
         let originalImg = document.getElementById('originalImg');
+        let line = document.getElementById('line');
 
         originalImg.style.width = imgBox.offsetWidth + "px";
 
@@ -30,6 +31,7 @@
         imgBox.onmousemove = function(e) {
             let boxWidth = (e.pageX - leftSpace) + "px";
             imgWrap.style.width = boxWidth;
+            line.style.left = boxWidth;
         }
     </script>
 </body>
