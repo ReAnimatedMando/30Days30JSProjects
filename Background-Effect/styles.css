@@ -28,6 +28,14 @@
     overflow: hidden;
 }
 
-
+span {
+    width: 1px;
+    height: 100%;
+    cursor: ew-resize;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
 
