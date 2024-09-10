@@ -38,4 +38,10 @@ span {
     top: 0;
 }
 
-
+.arrow {
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+}
