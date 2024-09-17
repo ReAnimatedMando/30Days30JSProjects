@@ -13,3 +13,12 @@
     justify-content: center;
 }
 
+#selectField {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+}
+
