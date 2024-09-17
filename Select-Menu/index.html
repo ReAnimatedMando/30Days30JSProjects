@@ -11,7 +11,7 @@
         <div class="selector">
             <div id="selectField">
                 <p id="selectText">Select Social Media</p>
-                <img src="Images/arrow.png">
+                <img src="Images/arrow.png" id="arrowIcon">
             </div>
             <ul id="list" class="hide">
                 <li class="options">
@@ -46,15 +46,18 @@
         let selectText = document.getElementById("selectText");
         let options = document.getElementsByClassName("options");
         let list = document.getElementById("list");
+        let arrowIcon = document.getElementById("arrowIcon");
 
         selectField.onclick = function() {
             list.classList.toggle("hide");
+            arrowIcon.classList.toggle("rotate");
         }
 
         for(option of options) {
             option.onclick = function() {
                 selectText.innerHTML = this.textContent;
                 list.classList.toggle("hide");
+                arrowIcon.classList.toggle("rotate");
             }
         }
 
