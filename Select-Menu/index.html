@@ -13,7 +13,7 @@
                 <p id="selectText">Select Social Media</p>
                 <img src="Images/arrow.png">
             </div>
-            <ul id="list">
+            <ul id="list" class="hide">
                 <li class="options">
                     <img src="Images/facebook.png">
                     <p>Facebook</p>
@@ -44,7 +44,15 @@
     <script>
         let selectField = document.getElementById("selectField");
         let selectText = document.getElementById("selectText");
-        
+        let options = document.getElementsByClassName("options");
+
+        for(option of options) {
+            option.onclick = function() {
+                selectText.innerHTML = this.textContent;
+            }
+        }
+
+
     </script>
 </body>
 </html>
