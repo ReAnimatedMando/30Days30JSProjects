@@ -28,3 +28,26 @@
 #selectField img {
     width: 12px;
 }
+
+#list {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.options {
+    width: 100%;
+    padding: 15px 0 15px 70px; 
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.options img {
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
