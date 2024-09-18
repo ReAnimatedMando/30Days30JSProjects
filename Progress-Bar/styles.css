@@ -5,3 +5,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #e3edf7;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
