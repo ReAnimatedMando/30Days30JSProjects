@@ -50,6 +50,14 @@ body {
 
 circle {
     fill: none;
-    stroke: cornflowerblue;
+    stroke: url(#GradientColor);
     stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
