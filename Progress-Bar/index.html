@@ -32,9 +32,14 @@
         let counter = 0;
 
         setInterval(() => {
-            counter += 1;
-            number.innerHTML = counter + "%";
-        }, 20)
+            if(counter == 65) {
+                clearInterval();
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%";
+            }
+            
+        }, 29)
 
 
     </script>
