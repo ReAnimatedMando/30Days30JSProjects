@@ -47,3 +47,9 @@ body {
     font-weight: 600;
     color: #555;
 }
+
+circle {
+    fill: none;
+    stroke: cornflowerblue;
+    stroke-width: 20px;
+}
