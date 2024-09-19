@@ -11,7 +11,7 @@
         <div class="outer">
             <div class="inner">
                 <div id="number">
-                    65%
+                    
                 </div>
             </div>
         </div>
@@ -26,5 +26,17 @@
             <circle cx="80" cy="80" r="70" stroke-linecap="round" />
         </svg>
     </div>
+    <script>
+
+        let number = document.getElementById("number");
+        let counter = 0;
+
+        setInterval(() => {
+            counter += 1;
+            number.innerHTML = counter + "%";
+        }, 20)
+
+
+    </script>
 </body>
 </html>
