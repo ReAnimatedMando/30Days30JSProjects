@@ -25,3 +25,8 @@
     background: #241e20;
 }
 
+.gallery img {
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
