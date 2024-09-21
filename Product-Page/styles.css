@@ -59,3 +59,18 @@
     color: #00d874;
     margin-bottom: 20px;
 }
+
+.details form {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.size-select {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.size-select p {
+    width: 70px;
+}
