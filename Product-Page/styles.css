@@ -39,4 +39,23 @@
     padding: 40px;
     padding-top: 60px;
     box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+}
+
+.details h1 {
+    color: #333;
+    font-size: 35px;
+}
+
+.details h2 {
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.details h3 {
+    color: #00d874;
+    margin-bottom: 20px;
 }
