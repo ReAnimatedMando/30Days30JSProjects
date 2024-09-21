@@ -83,3 +83,9 @@
 .size-select input {
     display: none;
 }
+
+.size-select span {
+    padding: 5px; 
+    margin-right: 10px;
+    cursor: pointer;
+}
