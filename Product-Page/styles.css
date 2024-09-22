@@ -100,3 +100,11 @@
     width: 75px;
 }
 
+.color-select span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
