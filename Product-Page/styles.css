@@ -167,3 +167,8 @@ form button {
     cursor: pointer;
 }
 
+.controls {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
