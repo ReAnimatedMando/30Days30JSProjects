@@ -14,3 +14,16 @@
     padding: 0 7%;
     color: #fff;
 }
+
+nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
