@@ -10,13 +10,23 @@
     <div class="hero">
         <div class="container">
             <div class="clock">
-                <span>00</span>
+                <span id="hrs">00</span>
                 <span>:</span>
-                <span>00</span>
+                <span id="min">00</span>
                 <span>:</span>
-                <span>00</span>
+                <span id="sec">00</span>
             </div>
         </div>
     </div>
+    <script>
+        let hrs = document.getElementById("hrs");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+        let currentTime = new Date();
+        hrs.innerHTML = currentTime.getHours();
+        min.innerHTML = currentTime.getMinutes();
+        sec.innerHTML = currentTime.getSeconds();
+    </script>
 </body>
 </html>
