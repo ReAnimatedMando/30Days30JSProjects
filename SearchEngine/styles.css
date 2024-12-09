@@ -51,5 +51,9 @@ form button {
     cursor: pointer;
 }
 
+::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
 
 
